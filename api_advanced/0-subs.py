@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-<<<<<<< HEAD
 '''
 Defines function that queries the Reddit API and returns the
 number of subscribers
@@ -27,16 +26,3 @@ def number_of_subscribers(subreddit):
         return(json_info.get('data').get('subscribers'))
     else:
         return(0)
-=======
-"""
-0-main
-"""
-import sys
-
-if __name__ == '__main__':
-    number_of_subscribers = __import__('0-subs').number_of_subscribers
-    if len(sys.argv) < 2:
-        print("Please pass an argument for the subreddit to search.")
-    else:
-        print("{:d}".format(number_of_subscribers(sys.argv[1])))
->>>>>>> f919471098e16c7da239b8dad8e588afbb5288ba
